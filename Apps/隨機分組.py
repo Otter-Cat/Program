@@ -36,32 +36,32 @@ while True:
 
         teams = {}
 
-        fountion = 1 
+        function = 1 
 
         for t in input_team:
-            key = f'team_{fountion}'
+            key = f'team_{function}'
             teams[key] = t
-            fountion += 1
+            function += 1
 
-        T_fountion = fountion -1 #隊伍總數
+        T_function = function -1 #隊伍總數
 
         players = {}
-        fountion = 1
+        function = 1
 
         for p in input_players:
-            player = f'player_{fountion}'
+            player = f'player_{function}'
             players[player] = p
-            fountion += 1
+            function += 1
 
         P_list = list(players.values())
-        T_list = [[] for _ in range(T_fountion)]
+        T_list = [[] for _ in range(T_function)]
 
-        fountion -= 1
-        P_fountion = fountion
-        fountion = 1
+        function -= 1
+        P_function = function
+        function = 1
 
         while len(P_list) > 0:
-            for i in range(T_fountion):
+            for i in range(T_function):
                 if P_list:
                     player = choice(P_list)
                     T_list[i].append(player)
