@@ -464,7 +464,7 @@ while True:
                 cmd("cls")
                 print(text, "為原文\n\n")
                 print(answer_A)
-            elif BOJI == "P":
+            elif BOJI == "O":
                 text_B_Raw = text
                 six = 6
                 text_B = []
